@@ -1,0 +1,25 @@
+# Virtual environment (your "toolbox"; teammates rebuild it from requirements.txt)
+.venv/
+venv/
+
+# Python junk files
+__pycache__/
+*.pyc
+
+# Editor settings
+.vscode/
+.idea/
+
+# Mac/Windows junk
+.DS_Store
+Thumbs.db
+
+# Secrets (never upload these)
+.env
+
+# Jupyter checkpoints (if you use notebooks)
+.ipynb_checkpoints/
+
+# Big or generated files
+data/raw/*.zip
+*.log
