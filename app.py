@@ -42,9 +42,9 @@ def make_map(data, column, title):
         plot_df, lat="lat", lon="lon", color=column,
         hover_data=["time", "zone", "description", "customers_affected"],
         zoom=10, height=520, map_style="open-street-map", title=title,
+        center=dict(lat=plot_df["lat"].mean(), lon=plot_df["lon"].mean()),
     )
     st.plotly_chart(fig, width="stretch")
-
 
 tab_ai, tab_truth = st.tabs(["AI grouping (DBSCAN)", "Ground truth (answer key)"])
 with tab_ai:
